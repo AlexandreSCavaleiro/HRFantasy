@@ -95,6 +95,12 @@ namespace HRFantasy
                 new Resposta("Arremessa o pão como se fosse um frisbee e grita “vai buscar!”", 'C', 'G'),
                 new Resposta("Come o pão olhando para ele com superioridade e diz “a vida é dura”.", 'N', 'E')
                 ));
+            perguntas.Add(new Pergunta("Você encontra um anel mágico que deixa qualquer um irresistível. Você…",
+                new Resposta("Usa para conseguir melhores acordos nas negociações do reino.", 'L', 'E'),
+                new Resposta("Dá ao seu amigo mais feio porque sente que ele precisa.", 'N', 'G'),
+                new Resposta("Vende para um ogro em troca de proteção vitalícia.", 'L', 'N'),
+                new Resposta("Usa para roubar corações (e bolsas) por onde passa.", 'C', 'E')
+                ));
 
             //ADICIONAR AS OUTRAS PERGUNTAS
         }
@@ -156,6 +162,8 @@ namespace HRFantasy
                 }
 
             }
+
+            //
         }
 
     }
