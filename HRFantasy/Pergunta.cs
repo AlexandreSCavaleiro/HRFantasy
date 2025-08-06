@@ -26,10 +26,10 @@ namespace HRFantasy
                     Pergunta:
                     {pergunta}
                     
-                    1.{r1}
-                    2.{r2}
-                    3.{r3}
-                    4.{r4}
+                    1.{r1.texto}
+                    2.{r2.texto}
+                    3.{r3.texto}
+                    4.{r4.texto}
 
                     Aperte a tecla referente a resposta correta...
                 """);

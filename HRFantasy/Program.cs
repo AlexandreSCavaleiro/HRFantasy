@@ -16,7 +16,7 @@ namespace HrFantasy
                 new Resposta("Come o pão olhando para ele com superioridade e diz “a vida é dura”.", 'N', 'E')
                 ));
 
-
+            perguntas[0].showAll();
         }
     }
 }
