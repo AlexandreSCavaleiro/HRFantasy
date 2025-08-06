@@ -109,58 +109,56 @@ namespace HRFantasy
         {
             foreach (Pergunta pergunta in perguntas)
             {
+                bool valido = false;
                 pergunta.showAll();
 
-                ConsoleKey op = Console.ReadKey(true).Key;
+                while (!valido) {
+
+                    ConsoleKey op = Console.ReadKey(true).Key;
+                    switch (op)
+                    {
+
+                        case ConsoleKey.NumPad1:
+                        case ConsoleKey.D1:
+                            valido = true;
+                            pergunta.r1.computaAlinhamento(jogador);
+
+                            break;
+
+                        case ConsoleKey.NumPad2:
+                        case ConsoleKey.D2: 
+                            valido = true;
+                            pergunta.r2.computaAlinhamento(jogador);
+
+                            break;
+
+                        case ConsoleKey.NumPad3:
+                        case ConsoleKey.D3:
+                            valido = true;
+                            pergunta.r3.computaAlinhamento(jogador);
+
+                            break;
+
+                        case ConsoleKey.NumPad4:
+                        case ConsoleKey.D4:
+                            valido = true;
+                            pergunta.r4.computaAlinhamento(jogador);
+
+                            break;
+
+                        default:
+                            Console.WriteLine("""
+
+                                        - Não entendi, Diga algo valido! 1, 2, 3 ou 4.....
+
+                                """);
+                            valido = false;
+                            break;
+                    }
+                } //while
 
                 Console.Clear();
-                
-                switch (op)
-                {
-                    //1. inicia mineração
-                    case ConsoleKey.NumPad1:
-                    case ConsoleKey.D1:
-                        pergunta.r1.computaAlinhamento(jogador);
-
-                        break;
-                    //2. total de pontos
-                    case ConsoleKey.NumPad2:
-                    case ConsoleKey.D2: //total de pontos no inventario
-                        pergunta.r2.computaAlinhamento(jogador);
-
-                        break;
-
-                    //3. mostrar inventário
-                    case ConsoleKey.NumPad3:
-                    case ConsoleKey.D3:
-                        pergunta.r3.computaAlinhamento(jogador);
-
-                        break;
-                    //4. pickdrop antes da mineração pTESTE somente
-                    case ConsoleKey.NumPad4:
-                    case ConsoleKey.D4: //pickdrop pra n ter que ficar minerando enquanto to testando
-                        pergunta.r4.computaAlinhamento(jogador);
-
-                        break;
-
-                    case ConsoleKey.Escape: //out
-                        Console.WriteLine("""
-
-                                - Ok, tudo bem desistir.....
-
-                        """);
-                        break;
-
-                    default:
-                        Console.WriteLine("""
-
-                                - Não entendi, Diga algo valido! 1, 2, 3 ou 4.....
-
-                        """);
-                        break;
-                }
-
-            }
+            }//foreach
 
             //TODO
             Console.WriteLine($"""
