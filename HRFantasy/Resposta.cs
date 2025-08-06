@@ -20,5 +20,26 @@ namespace HRFantasy
         }
 
 
+        public void computaAlinhamento(Jogador p)
+        {
+            switch (LC)
+            {
+                case 'L':
+                    p.lawful += 1;
+                    break;
+                case 'C':
+                    p.caotic += 1;
+                    break;
+            }
+            switch (GE)
+            {
+                case 'G':
+                    p.good += 1;
+                    break;
+                case 'E':
+                    p.evil += 1;
+                    break;
+            }
+        }
     }
 }

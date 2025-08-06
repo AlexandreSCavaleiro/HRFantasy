@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace ProjetoUC
+namespace HRFantasy
 {
     public abstract class MonoBehaviour
     {
@@ -16,7 +16,7 @@ namespace ProjetoUC
         public bool visible = false;
         public bool input = false;
 
-        public int speed = 170;
+        public int speed = 300;
 
         public void Run()
         {
@@ -54,7 +54,7 @@ namespace ProjetoUC
         public virtual void OnDestroy() { }
 
 
-        public abstract void Draw();
+        //public abstract void Draw();
 
     }
 }

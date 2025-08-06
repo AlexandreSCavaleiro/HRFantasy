@@ -8,8 +8,8 @@ namespace HRFantasy
 {
     internal class Pergunta
     {
-        string pergunta;
-        Resposta r1, r2, r3, r4;
+        public string pergunta;
+        public Resposta r1, r2, r3, r4;
 
         public Pergunta(string pergunta, Resposta r1, Resposta r2, Resposta r3, Resposta r4)
         {

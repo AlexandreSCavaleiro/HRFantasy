@@ -8,8 +8,8 @@ namespace HRFantasy
 {
     class Jogador
     {
-        string nome = "player";
-        int lawful, caotic, good, evil;
+        public string nome = "player";
+        public int lawful, caotic, good, evil;
 
         public Jogador(string nome) {
 
