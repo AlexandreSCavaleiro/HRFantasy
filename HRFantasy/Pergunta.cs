@@ -9,19 +9,15 @@ namespace HRFantasy
     internal class Pergunta
     {
         string pergunta;
-        string r1, r2, r3, r4;
-        int IDcorreta;
-        string item;
+        Resposta r1, r2, r3, r4;
 
-        public Pergunta(string pergunta, string r1, string r2, string r3, string r4, int iDcorreta, string item)
+        public Pergunta(string pergunta, Resposta r1, Resposta r2, Resposta r3, Resposta r4)
         {
             this.pergunta = pergunta;
             this.r1 = r1;
             this.r2 = r2;
             this.r3 = r3;
             this.r4 = r4;
-            IDcorreta = iDcorreta;
-            this.item = item;
         }
 
         public void showAll()

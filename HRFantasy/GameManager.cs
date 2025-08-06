@@ -6,7 +6,16 @@ using System.Threading.Tasks;
 
 namespace HRFantasy
 {
-    internal class GameManager
+    class GameManager
     {
+        private GameManager()
+        {
+            
+        }
+
+        static private GameManager instance;
+        static public GameManager Instance => instance ??= new GameManager();
+
+
     }
 }
