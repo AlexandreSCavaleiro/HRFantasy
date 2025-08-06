@@ -146,7 +146,7 @@ namespace HRFantasy
                     case ConsoleKey.Escape: //out
                         Console.WriteLine("""
 
-                            Ok, tudo bem desistir.....
+                                - Ok, tudo bem desistir.....
 
                         """);
                         break;
@@ -156,14 +156,24 @@ namespace HRFantasy
 
                                 - Não entendi, Diga algo valido! 1, 2, 3 ou 4.....
 
-
                         """);
                         break;
                 }
 
             }
 
-            //
+            //TODO
+            Console.WriteLine($"""
+
+                    Você termina de responder a ultima pergunta, nesse momento o anão e diz: 
+                        
+                        - Pois bem, pelos meus calculos aqui seu alinhamento ta mais para {jogador.getAlinhamento()}
+                        - Perfeito para a guilda... 
+
+                """);
+            Console.WriteLine("... aperte uma tecla pra continuar.");
+            Console.ReadLine();
+            Console.Clear();
         }
 
     }
