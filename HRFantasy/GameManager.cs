@@ -101,6 +101,55 @@ namespace HRFantasy
                 new Resposta("Vende para um ogro em troca de proteção vitalícia.", 'L', 'N'),
                 new Resposta("Usa para roubar corações (e bolsas) por onde passa.", 'C', 'E')
                 ));
+            perguntas.Add(new Pergunta(". Um comerciante acidentalmente te dá uma moeda a mais. Você…",
+                new Resposta("Devolve imediatamente, é o certo a se fazer.", 'L', 'G'),
+                new Resposta("Fica com a moeda, afinal o erro foi dele.", 'N', 'E'),
+                new Resposta("Devolve com uma piada sobre como ele precisa contar melhor.", 'C', 'G'),
+                new Resposta("Só percebe horas depois e decide manter — destino quis assim.", 'T', 'N')
+                ));
+            perguntas.Add(new Pergunta("Um mago te oferece poder absoluto por uma pequena trapaça no tribunal.Você… ",
+                new Resposta("Recusa e denuncia o mago. Justiça vem antes de poder.", 'L', 'G'),
+                new Resposta("Aceita, mas só usa o poder para ajudar órfãos e cozinhar melhor.", 'C', 'G'),
+                new Resposta("Aceita, mas usa só o suficiente pra ganhar vantagens pessoais. ", 'L', 'E'),
+                new Resposta("Nem ouve a proposta inteira, já está fazendo a trapaça.", 'C', 'E')
+                ));
+            perguntas.Add(new Pergunta("Um rei cruel te contrata para capturar fugitivos inocentes. Você… ",
+                new Resposta("A) Recusa, mesmo que isso custe sua vida.", 'L', 'G'),
+                new Resposta("B) Aceita, mas liberta os fugitivos em segredo. ", 'N', 'G'),
+                new Resposta("C) Finge aceitar e depois expõe o rei publicamente. ", 'C', 'G'),
+                new Resposta("D) Aceita e cobra em dobro, afinal são dois trabalhos: capturar e calar.", 'L', 'E')
+                ));
+
+            perguntas.Add(new Pergunta("Você encontra uma espada lendária fincada em pedra com a placa “Não toque”. Você…",
+                new Resposta("A) Pede autorização às autoridades locais.", 'L', 'N'),
+                new Resposta("B) Arranca a espada e grita “é minha agora!” ", 'C', 'N'),
+                new Resposta("C) Observa, tira uma selfie, posta com #ProibidoÉMaisGostoso", 'C', 'G'),
+                new Resposta("D) Arranca e usa pra intimidar pessoas aleatórias na rua.", 'C', 'E')
+                ));
+            perguntas.Add(new Pergunta("Uma vila está sendo atacada por bandidos. Você…",
+                new Resposta("A) Organiza a defesa e protege os aldeões com estratégia militar.", 'L', 'G'),
+                new Resposta("B) Corre para o combate berrando e improvisando armas.", 'C', 'G'),
+                new Resposta("C) Aproveita o caos para pegar algumas coisas “desprotegidas”. ", 'N', 'E'),
+                new Resposta("D) Assiste de longe e só age se alguém pedir com educação.", 'T', 'N')
+                ));
+            perguntas.Add(new Pergunta("Um velho inimigo te implora por perdão. Você…",
+                new Resposta("A) Perdoa porque acredita na redenção.", 'N', 'G'),
+                new Resposta("B) Finge perdoar, mas planeja vingança fria.", 'L', 'E'),
+                new Resposta("C) Dá um abraço e uma rasteira ao mesmo tempo. ", 'C', 'N'),
+                new Resposta("D) Nem responde. Apenas sorri enquanto caminha em direção a ele com uma tocha. ", 'C', 'E')
+                ));
+            perguntas.Add(new Pergunta("Um lacaio te pergunta: “Qual é o nosso objetivo, mestre?” Você responde…",
+                new Resposta("A) “Restaurar a ordem e proteger os inocentes.” ", 'L', 'G'),
+                new Resposta("B) “Espalhar o medo, mas com elegância.” ", 'L', 'E'),
+                new Resposta("C) “Fazer o que der na telha, oras!” ", 'C', 'N'),
+                new Resposta("D) “Sobreviver. Só isso importa.” ", 'N', 'N')
+                ));
+             perguntas.Add(new Pergunta("Você se vê dividido entre salvar um vilarejo ou seguir seu plano original de encontrar um tesouro. Você…  ",
+                new Resposta("A) Salva o vilarejo, planos podem esperar. ", 'L ', 'G'),
+                new Resposta("B) Vai atrás do tesouro. A vila vai se virar. ", 'N', 'E'),
+                new Resposta("C) Tenta fazer os dois ao mesmo tempo, ainda que malucos. ", 'C', 'G'),
+                new Resposta("D) Salva parte da vila, pega parte do tesouro. Diplomacia interna. ", 'L', 'N')
+                ));
 
             //ADICIONAR AS OUTRAS PERGUNTAS
         }
